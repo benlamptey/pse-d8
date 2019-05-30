@@ -1,0 +1,18 @@
+uuid: b31b6176-35cf-40e1-ac1d-036485962328
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Homepage
+type: homepage
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

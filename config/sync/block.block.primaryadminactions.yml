@@ -1,0 +1,18 @@
+uuid: 44672da2-54c3-40a1-a2a7-1f50cd85f58b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pse_light
+id: primaryadminactions
+theme: pse_light
+region: content
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 8b6561ca-0537-403a-aaad-32eb36c2e787
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pse_light
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: pse_light_local_tasks
+theme: pse_light
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

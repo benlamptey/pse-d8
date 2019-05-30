@@ -1,0 +1,21 @@
+uuid: 32d6f44a-4089-4139-8466-427311013a58
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - pse_light
+id: syndicate
+theme: pse_light
+region: content
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: Syndicate
+  provider: node
+  label_display: visible
+  block_count: 10
+visibility: {  }

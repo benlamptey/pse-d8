@@ -1,0 +1,19 @@
+{%
+  set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+]
+%}
+{{ attach_library('classy/node') }}
+<article{{ attributes.addClass(classes) }}>
+
+  {{ content.field_teaser_image }}
+  <div class="info-wrapper">
+    <h2 class="teaser-title"><a href="{{ url }}" rel="bookmark">{{ label }}</a></h2>
+    {{ content|without('field_teaser_image') }}
+  </div>
+
+</article>

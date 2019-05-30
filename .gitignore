@@ -22,3 +22,7 @@ web/sites/simpletest
 
 # Ignore .env files as they are personal
 .env
+
+web/themes/custom/pse_light/node_modules/*
+web/assets/
+

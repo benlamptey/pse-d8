@@ -1,0 +1,22 @@
+uuid: ba7a7110-ff6d-4878-89aa-6ae5a0014b40
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pse_light
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: pse_light_messages
+theme: pse_light
+region: content
+weight: -1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
