@@ -1,16 +1,16 @@
-uuid: 880b06fb-5932-4d41-a7fc-8bcbafdd92ea
+uuid: 3366e1e3-9a38-4431-8542-c2a6876750fb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_background_image
+    - field.storage.paragraph.field_image
     - media.type.image
-    - paragraphs.paragraphs_type.hero
-id: paragraph.hero.field_background_image
-field_name: field_background_image
+    - paragraphs.paragraphs_type.text_image
+id: paragraph.text_image.field_image
+field_name: field_image
 entity_type: paragraph
-bundle: hero
-label: 'Background image'
+bundle: text_image
+label: Image
 description: ''
 required: false
 translatable: false
