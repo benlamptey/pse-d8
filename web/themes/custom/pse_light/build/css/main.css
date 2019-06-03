@@ -6678,6 +6678,14 @@ a.text-white:hover, a.text-white:focus {
 .pse-hero {
   background-size: cover; }
 
+.pse-news-items {
+  display: flex;
+  flex-wrap: wrap; }
+  .pse-news-items .pse-news-item {
+    display: flex;
+    padding: 0.5em;
+    width: 100%; }
+
 .section-break {
   background: #f2f2f2;
   text-align: center;

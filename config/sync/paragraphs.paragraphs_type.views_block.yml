@@ -1,0 +1,9 @@
+uuid: 38930b1a-2ca5-4d94-a186-4a46d4112d7a
+langcode: en
+status: true
+dependencies: {  }
+id: views_block
+label: 'Views block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

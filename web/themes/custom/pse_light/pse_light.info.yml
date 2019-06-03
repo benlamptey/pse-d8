@@ -12,3 +12,4 @@ regions:
   content: 'Content'
   footer: 'Footer'
   copyright: 'Copyright'
+  callable_blocks: 'Callable blocks'
