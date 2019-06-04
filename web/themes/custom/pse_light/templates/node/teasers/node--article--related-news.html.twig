@@ -1,9 +1,5 @@
-<div class="row justify-content-center">
-  <div class="col-12 col-lg-8">
-    <div class="py-5 py-md-0"><img class="mb-3" src="./assets/glyphs/rectangle-1.svg" width="40"/>
-      <h3><a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ label }}</a></h3>
-      <p>{{ node.body.summary }}</p>
-    </div>
-    <div class="border-bottom d-md-none"></div>
-  </div>
+<div class="py-5 py-md-0"><img class="mb-3" src="{{ image_path }}"/>
+  <h3><a href="{{ path('entity.node.canonical', {'node': node.id}) }}">{{ label }}</a></h3>
+  <p>{{ node.body.summary }}</p>
 </div>
+<div class="border-bottom d-md-none"></div>
