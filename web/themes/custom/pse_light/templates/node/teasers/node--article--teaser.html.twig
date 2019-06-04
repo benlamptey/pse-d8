@@ -2,6 +2,6 @@
   <div class="card-body">
     <h2>{{ label }}</h2>
     <p class="mb-3">{{ node.body.summary }}</p>
-    <a class="weight-500" href=""><span>{{ 'Read more'|t }}</span></a>
+    <a class="weight-500" href="{{ path('entity.node.canonical', {'node': node.id}) }}"><span>{{ 'Read more'|t }}</span></a>
   </div>
 </div>

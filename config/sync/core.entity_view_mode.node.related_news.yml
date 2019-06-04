@@ -1,0 +1,10 @@
+uuid: 35df7407-d722-4240-a598-2f410286f7dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.related_news
+label: 'Related news'
+targetEntityType: node
+cache: true

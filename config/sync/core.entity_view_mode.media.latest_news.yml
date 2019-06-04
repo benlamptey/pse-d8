@@ -1,0 +1,10 @@
+uuid: 9b783de0-4b76-4e2f-9c1c-928a15d69af8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.latest_news
+label: 'Latest news'
+targetEntityType: media
+cache: true

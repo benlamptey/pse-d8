@@ -1,0 +1,32 @@
+uuid: a78272d6-c562-4c1b-aedb-e5e95f955e18
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.latest_news
+    - field.field.media.image.field_media_image
+    - image.style.large
+    - media.type.image
+  module:
+    - image
+_core:
+  default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
+id: media.image.latest_news
+targetEntityType: media
+bundle: image
+mode: latest_news
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true
