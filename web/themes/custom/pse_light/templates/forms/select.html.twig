@@ -1,0 +1,24 @@
+{#
+
+/**
+ * @file
+ * Theme override for a select element.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the select tag.
+ * - options: The option element children.
+ *
+ * @see template_preprocess_select()
+ */
+#}
+{% spaceless %}
+  <div class="form-group">
+    <div class="custom-select custom-select-lg">
+      <select{{ attributes }}>
+        {% for option in options %}
+          <option value="{{ option.value }}"{{ option.selected ? ' selected="selected"' }}>{{ option.label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+{% endspaceless %}

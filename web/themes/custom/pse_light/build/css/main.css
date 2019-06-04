@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 700;
-  color: inherit;
+  color: #3c3c3b;
   margin-bottom: 1.25rem; }
 
 h1, .h1 {
@@ -3477,11 +3477,11 @@ ol.custom-list {
       content: "";
       display: inline-block;
       margin-right: 1rem;
-      color: #999999;
-      width: 5.5px;
-      height: 5.5px;
-      border-top: 1.5px solid #999999;
-      border-right: 1.5px solid #999999;
+      color: #ef7e06;
+      width: 9.5px;
+      height: 9.5px;
+      border-top: 2.5px solid #ef7e06;
+      border-right: 2.5px solid #ef7e06;
       transform: rotate(45deg);
       position: relative;
       vertical-align: middle; }
@@ -4295,7 +4295,7 @@ button.close {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  color: inherit;
+  color: #3c3c3b;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb; }
   .popover-header:empty {
@@ -6685,6 +6685,12 @@ a.text-white:hover, a.text-white:focus {
     display: flex;
     padding: 0.5em;
     width: 100%; }
+
+.related-news-item img {
+  width: 330px; }
+
+.article-date {
+  font-style: italic; }
 
 .section-break {
   background: #f2f2f2;
