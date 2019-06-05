@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.field_content_sections
     - field.field.node.article.field_image
+    - field.field.node.article.field_more_information
     - field.field.node.article.field_related_news
     - node.type.article
   module:
@@ -59,6 +60,18 @@ content:
     weight: 1
     settings:
       media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_more_information:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
     region: content
   field_related_news:

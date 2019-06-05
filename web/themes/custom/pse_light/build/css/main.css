@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 700;
-  color: #3c3c3b;
+  color: inherit;
   margin-bottom: 1.25rem; }
 
 h1, .h1 {
@@ -4295,7 +4295,7 @@ button.close {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  color: #3c3c3b;
+  color: inherit;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb; }
   .popover-header:empty {
@@ -6689,8 +6689,40 @@ a.text-white:hover, a.text-white:focus {
 .related-news-item img {
   width: 330px; }
 
-.article-date {
+.pse-news-article .article-date {
   font-style: italic; }
+
+.pse-news-article h1, .pse-news-article h2 {
+  color: #3c3c3b; }
+
+.pse-news-article h1.background-title {
+  color: #fff; }
+
+.pse-news-article .summary {
+  color: #777777; }
+
+.pse-news-article .article-hero {
+  background-size: cover; }
+
+.pse-local-task-item {
+  list-style: none;
+  display: inline-block; }
+  .pse-local-task-item a {
+    color: white;
+    background: #ef7e06;
+    padding: 10px;
+    border-radius: 5px; }
+    .pse-local-task-item a:hover {
+      background: #006c85; }
+
+footer {
+  background: #3c3c3b;
+  color: #fff; }
+  footer a {
+    color: #fff; }
+
+.paragraph {
+  margin-bottom: 1.5rem; }
 
 .section-break {
   background: #f2f2f2;

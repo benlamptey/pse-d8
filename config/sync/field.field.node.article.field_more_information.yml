@@ -1,0 +1,48 @@
+uuid: 8b90e89a-cbc9-421e-8245-fdb3ca5086a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_more_information
+    - node.type.article
+    - paragraphs.paragraphs_type.links
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.article.field_more_information
+field_name: field_more_information
+entity_type: node
+bundle: article
+label: 'More information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      links: links
+      text: text
+    target_bundles_drag_drop:
+      form:
+        weight: 7
+        enabled: false
+      hero:
+        weight: 8
+        enabled: false
+      links:
+        enabled: true
+        weight: 9
+      text:
+        enabled: true
+        weight: 10
+      text_image:
+        weight: 11
+        enabled: false
+      views_block:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

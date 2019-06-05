@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_content_sections
     - node.type.article
     - paragraphs.paragraphs_type.form
+    - paragraphs.paragraphs_type.text_image
   module:
     - entity_reference_revisions
 id: node.article.field_content_sections
@@ -24,6 +25,7 @@ settings:
     negate: 0
     target_bundles:
       form: form
+      text_image: text_image
     target_bundles_drag_drop:
       form:
         enabled: true
@@ -32,8 +34,8 @@ settings:
         weight: 6
         enabled: false
       text_image:
+        enabled: true
         weight: 7
-        enabled: false
       views_block:
         weight: 8
         enabled: false

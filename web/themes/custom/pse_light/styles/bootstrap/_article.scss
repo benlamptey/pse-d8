@@ -1,3 +1,22 @@
-.article-date {
-  font-style: italic;
+.pse-news-article {
+
+  .article-date {
+    font-style: italic;
+  }
+
+  h1, h2 {
+    color: $pse-gray;
+  }
+
+  h1.background-title {
+    color: #fff;
+  }
+
+  .summary {
+    color: $gray-700;
+  }
+
+  .article-hero {
+    background-size: cover;
+  }
 }

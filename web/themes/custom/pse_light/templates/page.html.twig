@@ -74,14 +74,6 @@
  */
 #}
 {{ page.header }}
-<hr class="mb-0">
-<div class="container">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a class="text-dark" href=""><span>First</span></a></li>
-    <li class="breadcrumb-item"><a class="text-dark" href=""><span>Second</span></a></li>
-    <li class="breadcrumb-item active"><span>Third</span></li>
-  </ol>
-</div>
 {{ page.content }}
 
 {#<div class="container">#}
@@ -146,11 +138,45 @@
     {#</div>#}
   {#</div>#}
 {#</div>#}
-
-<div id="page-wrapper" class="clearfix">
-  <div id="page" class="clearfix {{ region_classes }}">
-
-    <section id="content-outer-wrapper" class="outer-wrapper clearfix">
-    </section><!-- /#main-outer-wrapper -->
+<hr>
+<footer>
+  <div class="container">
+    <div class="row py-4">
+      <div class="col-12 col-lg-2 mb-4 mb-lg-0">
+        <img src="./assets/logos/acme.svg" width="62" />
+      </div>
+      <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+        <h4>First column</h4>
+        <div class="small">
+          <div class="mb-1"><a class="text-dark" href=""><span>First page</span></a></div>
+          <div class="mb-1"><a class="text-dark" href=""><span>Second page</span></a></div>
+          <div class="mb-1"><a class="text-dark" href=""><span>Third</span></a></div>
+          <div class="mb-1"><a class="text-dark" href=""><span>Fourth</span></a></div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+        <h4>Second</h4>
+        <div class="small">
+          <div class="mb-1"><a class="text-dark" href=""><span>Fifth page</span></a></div>
+          <div class="mb-1"><a class="text-dark" href=""><span>Sixth page</span></a></div>
+          <div class="mb-1"><a class="text-dark" href=""><span>Eighth</span></a></div>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+        <h4>Third</h4>
+        <div class="small">
+          <div class="mb-1"><a class="text-dark" href=""><span>First page</span></a></div>
+          <div class="mb-1"><a class="text-dark" href=""><span>Second page</span></a></div>
+          <div class="mb-1"><a class="text-dark" href=""><span>Third</span></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="d-lg-flex align-item-ceneter justify-content-between border-top py-3 py-lg-2 mt-lg-5">
+      <div class="small mb-2 mb-lg-0"><span class="text-muted">&copy; 2019 Process System Enterprise. All right reserved.</span></div>
+      <div class="small"><a class="d-block d-lg-inline text-muted ml-lg-3 mb-2 mb-lg-0" href=""><span>Privacy Policy</span></a><a class="d-block d-lg-inline text-muted ml-lg-3 mb-2 mb-lg-0" href=""><span>Terms of Service</span></a></div>
+      <div class="d-none d-lg-block ml-auto"><a class="transparent-invert-link" href=""><img src="./assets/glyphs/facebook-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="./assets/glyphs/linkedin-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="./assets/glyphs/twitter-small.svg" width="16" /></a><a class="transparent-invert-link ml-2" href=""><img src="./assets/glyphs/pinterest-small.svg" width="16" /></a></div>
+      <div class="d-lg-none"><a class="transparent-link" href=""><img src="./assets/glyphs/facebook-small.svg" width="24" /></a><a class="transparent-link ml-2" href=""><img src="./assets/glyphs/linkedin-small.svg" width="24" /></a><a class="transparent-link ml-2" href=""><img src="./assets/glyphs/twitter-small.svg" width="24" /></a><a class="transparent-link ml-2" href=""><img src="./assets/glyphs/pinterest-small.svg" width="24" /></a></div>
+    </div>
   </div>
-</div> <!-- /#page, /#page-wrapper -->
+</footer>
+
