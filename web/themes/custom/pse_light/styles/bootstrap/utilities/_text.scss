@@ -56,3 +56,7 @@
 .text-hide {
   @include text-hide();
 }
+
+.text-pse-grey {
+  color: $pse-gray !important;
+}

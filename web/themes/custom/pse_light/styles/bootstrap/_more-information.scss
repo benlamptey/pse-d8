@@ -1,0 +1,12 @@
+.pse-more-information {
+  img {
+    width: 100%;
+  }
+}
+.pse-more-information-links {
+  .caret-right {
+    &:after {
+      color: $blue;
+    }
+  }
+}

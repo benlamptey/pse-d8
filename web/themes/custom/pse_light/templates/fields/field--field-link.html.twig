@@ -1,4 +1,5 @@
-{% for item in items %}
-  <div class="border-bottom py-2"><h5 class="caret-right mb-0"><a href="{{ item.content['#url'] }}">{{ item.content['#title'] }}</a></h5></div>
-{% endfor %}
-
+<div class="pse-more-information-links">
+  {% for item in items %}
+    <div class="border-bottom py-2"><h5 class="caret-right mb-0"><a href="{{ item.content['#url'] }}">{{ item.content['#title'] }}</a></h5></div>
+  {% endfor %}
+</div>

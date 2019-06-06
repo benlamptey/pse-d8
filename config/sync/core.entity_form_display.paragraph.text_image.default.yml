@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.text_image.field_background_color
     - field.field.paragraph.text_image.field_cta_link
     - field.field.paragraph.text_image.field_image
     - field.field.paragraph.text_image.field_image_alignment
@@ -18,8 +19,14 @@ targetEntityType: paragraph
 bundle: text_image
 mode: default
 content:
+  field_background_color:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_cta_link:
-    weight: 4
+    weight: 5
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -28,19 +35,19 @@ content:
     region: content
   field_image:
     type: media_library_widget
-    weight: 2
+    weight: 4
     settings:
       media_types: {  }
     third_party_settings: {  }
     region: content
   field_image_alignment:
-    weight: 3
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_text:
-    weight: 1
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -48,7 +55,7 @@ content:
     type: text_textarea
     region: content
   field_title:
-    weight: 0
+    weight: 2
     settings:
       size: 60
       placeholder: ''
