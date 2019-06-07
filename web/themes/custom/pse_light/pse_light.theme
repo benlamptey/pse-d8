@@ -5,6 +5,9 @@
  */
 
 
+/**
+ * @Implements hook_preprocess_HOOK()
+ */
 function pse_light_preprocess_paragraph(&$variables) {
   $paragraph = $variables['paragraph'];
 
@@ -46,17 +49,12 @@ function pse_light_preprocess_paragraph(&$variables) {
     if (!$paragraph->get('field_background_color')->isEmpty()) {
       $variables['background_color'] =  $paragraph->get('field_background_color')->getString();
     }
-
-
   }
-
 }
 
-function pse_light_preprocess_node__article__teaser(&$variables) {
-
-  $s = 9;
-}
-
+/**
+ * @Implements hook_preprocess_HOOK()
+ */
 function pse_light_preprocess_node__article(&$variables) {
   $node = $variables['node'];
   if (!$node->get('field_image')->isEmpty()) {
@@ -78,8 +76,6 @@ function pse_light_preprocess_node__article(&$variables) {
     // No image, pass default path instead.
     $variables['image_path'] = '/' . drupal_get_path('theme', 'pse_light') . '/images/pse-default-news.jpg';
   }
-  $s = 9;
-
 }
 
 /**
@@ -104,6 +100,9 @@ function pse_light_preprocess_node__page(&$variables) {
   }
 }
 
+/**
+ * @Implements hook_preprocess_node()
+ */
 function pse_light_preprocess_node(&$variables) {
   $node = $variables['node'];
   if ($node->bundle() == 'article') {
@@ -129,7 +128,4 @@ function pse_light_preprocess_node(&$variables) {
       $variables['image_path'] = '/' . drupal_get_path('theme', 'pse_light') . '/images/pse-default-news.jpg';
     }
   }
-
-  $s = 9;
-
 }

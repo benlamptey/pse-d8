@@ -4673,6 +4673,9 @@ button.bg-white:focus {
 .pse-default-bg {
   color: #000; }
 
+.pse-green-bg {
+  background-color: #006c85; }
+
 .border {
   border: 1px solid #e7e7e7 !important; }
 
